@@ -30,10 +30,11 @@ imageToText <- function(imagePath) {
 ############################################################
 #' @title helper function code to extract the response data.frame
 #' @description a utility to extract features from the API response
-#'
+#' 
 #' @param pp an API response object
 #' @param feature the name of the feature to return 
 #' @return a data frame
+#' @export
 #'
 extractResponse <- function(pp, feature){
   if (feature == "LABEL_DETECTION") {
