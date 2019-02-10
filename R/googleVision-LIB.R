@@ -51,6 +51,9 @@ extractResponse <- function(pp, feature){
   if (feature == "LANDMARK_DETECTION") {
     return(pp$content$responses$landmarkAnnotations[[1]])
   }
+  if (feature == "OBJECT_LOCALIZATION") {
+    return(pp$content$responses$localizedObjectAnnotations[[1]])
+  }
 }
 
 
